@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Додати автора</title>
+</head>
+<body>
+    <h1>Додати автора</h1>
+    <form method="post" action="{% url 'add_author' %}">
+        {% csrf_token %}
+        <label for="author_name">Ім'я автора:</label>
+        <input type="text" id="author_name" name="author_name" required><br>
+        <button type="submit">Додати автора</button>
+    </form>
+</body>
+</html>

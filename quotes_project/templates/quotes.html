@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Цитати</title>
+</head>
+<body>
+    <h1>Список цитат</h1>
+    <ul>
+        {% for quote in quotes %}
+            <li>{{ quote.text }} - {{ quote.author }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
